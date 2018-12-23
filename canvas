@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 默认宽度为300*150 -->
+    <canvas id="myCanvas"></canvas>
+    
+    <script type="text/javascript">
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#ff0000';
+        // context.fillRect(x,y,width,height);
+        ctx.fillRect(0,0,300,150);
+        ctx.clearRect(20,20,100,50);
+
+    </script>
+</body>
+</html>
