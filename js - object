@@ -1,0 +1,21 @@
+// 给div添加背景颜色
+// 面向过程
+var divs = document.getElementsByTagName('div');
+for (var i=0; i<divs.length; i++) {
+    divs[i].style.backgroundColor = 'red';
+}
+
+// 面向对象
+var domOpr = {
+    getDiv: function(){
+        var divs = document.getElementsByTagName('div');
+        return divs;
+    },
+    setStyle: function(){
+        var divs = this.getDiv()
+        for (var i=0; i<divs.length; i++) {
+            divs[i].style.backgroundColor = 'red';
+        }
+    }
+}
+domOpr.setStyle();
